@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: spotify-frontend-service
+spec:
+  selector:
+    app: spotify-frontend
+  ports:
+    - port: 3000
+      targetPort: 3000
+  type: ClusterIP
